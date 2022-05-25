@@ -1,5 +1,3 @@
-<%@ page import="cg.wbd.grandemonstration.service.CustomerService" %>
-<%@ page import="cg.wbd.grandemonstration.service.CustomerServiceFactory" %>
 <%@ page import="cg.wbd.grandemonstration.model.Customer" %>
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -33,7 +31,7 @@ There are <%= customers.size() %> customer(s) in list.
                 <c:out value="${c.id}"/>
             </td>
             <td>
-                <a href="/customers/info.jsp?id=${c.id}">${c.name}</a>
+                <a href="./customers/${c.id}">${c.name}</a>
             </td>
             <td>
                 <c:out value="${c.email}"/>
