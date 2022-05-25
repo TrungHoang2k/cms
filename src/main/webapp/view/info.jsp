@@ -1,7 +1,3 @@
-<%@ page import="cg.wbd.grandemonstration.service.CustomerService" %>
-<%@ page import="cg.wbd.grandemonstration.service.CustomerServiceFactory" %>
-<%@ page import="cg.wbd.grandemonstration.model.Customer" %>
-
 <form action="/update" method="post" object="customer">
 <fieldset>
     <legend>Customer Information</legend>
